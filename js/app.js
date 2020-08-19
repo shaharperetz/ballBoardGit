@@ -20,7 +20,7 @@ function init() {
 	reset();
 	gBoard = buildBoard();
 	renderBoard(gBoard);
-	console.log(gBoard)
+
 
 	addRndBalls();
 	addGlue();
@@ -74,6 +74,7 @@ function buildBoard() {
 
 // Render the board to an HTML table
 function renderBoard(board) {
+	console.log(board)
 
 	var elBoard = document.querySelector('.board');
 	var strHTML = '';
