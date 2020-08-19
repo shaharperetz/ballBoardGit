@@ -75,16 +75,13 @@ function buildBoard() {
 // Render the board to an HTML table
 function renderBoard(board) {
 	console.log(board)
-
 	var elBoard = document.querySelector('.board');
 	var strHTML = '';
 	for (var i = 0; i < board.length; i++) {
 		strHTML += '<tr>\n';
 		for (var j = 0; j < board[0].length; j++) {
 			var currCell = board[i][j];
-
 			var cellClass = getClassName({ i: i, j: j })
-
 			if (currCell.type === FLOOR && currCell.gameElement === GLUE) cellClass += ' floor glue';
 			else if (currCell.type === FLOOR) cellClass += ' floor';
 			else if (currCell.type === WALL) cellClass += ' wall';
