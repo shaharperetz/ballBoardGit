@@ -1,0 +1,15 @@
+body {background-color: black; color:white;font-family:'Comic Sans MS'}
+
+.cell {width:40px; height:40px;text-align: center;border: 1px solid #000}
+.cell img {width:25px; height:auto}
+.floor {background-color: gray}
+.wall {background-color: brown}
+.ballInfo{float: right;font-size: small;}
+.glueInfo{float: left;visibility:hidden;font-size: small;}
+.clear{clear: both;}
+.rstbtn{background-color: #808080 !important;
+       font-size: 110%;
+       font-family:'Comic Sans MS' !important}
+       
+.glue{background-image: url("../img/glue.png");}
+.wrap{display: inline-block;text-align: center;}
